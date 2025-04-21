@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер DEC ↔ HEX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Конвертер DEC ↔ HEX</h2>
+
+        <!-- Десятичное число -->
+        <div class="input-group">
+            <label for="decimalInput">Десятичное число:</label>
+            <input type="text" id="decimalInput" placeholder="Введите DEC число">
+            <button onclick="convertToHex()">→ HEX →</button>
+        </div>
+
+        <!-- Шестнадцатеричное число -->
+        <div class="input-group">
+            <label for="hexInput">Шестнадцатеричное число:</label>
+            <input type="text" id="hexInput" placeholder="Введите HEX число (с 0x или без)">
+            <button onclick="convertToDec()">→ DEC →</button>
+        </div>
+
+        <!-- Результат -->
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
